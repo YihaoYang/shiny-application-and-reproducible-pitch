@@ -2,7 +2,9 @@
 title: "Reproducible pitch"
 author: "yihao"
 date: "8/15/2020"
-output: ioslides_presentation
+output: 
+  ioslides_presentation: 
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -13,8 +15,8 @@ knitr::opts_chunk$set(echo = TRUE,message = FALSE)
 
 This is for Course Project: Shiny Application and Reproducible Pitch. 
 
-- Github repo please see: <https://yihaoy.shinyapps.io/ShinyApp/>.
-- Shiny Application please see: <>.
+- Github repo please see: <https://github.com/YihaoYang/shiny-application-and-reproducible-pitch>.
+- Shiny Application please see: <https://yihaoy.shinyapps.io/ShinyApp/>.
 - Reproducible Pitch please see: <>.
 
 ## Background
@@ -44,6 +46,7 @@ str(mtcars)
 
 ```{r}
 require(ggplot2)
-ggplot(data=mtcars,aes(wt,mpg))+geom_point()+geom_smooth(method='lm',aes(group=1))
+ggplot(data=mtcars,aes(wt,mpg))+geom_point()
++geom_smooth(method='lm',aes(group=1))
 ```
 
