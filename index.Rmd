@@ -1,7 +1,7 @@
 ---
 title: "Reproducible pitch"
 author: "yihao"
-date: "8/15/2020"
+date: "08/15/2020"
 output: 
   ioslides_presentation: 
     keep_md: yes
