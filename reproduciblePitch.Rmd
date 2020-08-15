@@ -1,0 +1,49 @@
+---
+title: "Reproducible pitch"
+author: "yihao"
+date: "8/15/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message = FALSE)
+```
+
+## Reproducible pitch
+
+This is for Course Project: Shiny Application and Reproducible Pitch. 
+
+- Github repo please see: <https://yihaoy.shinyapps.io/ShinyApp/>.
+- Shiny Application please see: <>.
+- Reproducible Pitch please see: <>.
+
+## Background
+The experiment is based on `mtcars` dataset. According to R documentation, 
+
+> It is a data frame with 32 observations on 11 (numeric) variables.\
+[, 1]	mpg	Miles/(US) gallon\
+[, 2]	cyl	Number of cylinders\
+[, 3]	disp	Displacement (cu.in.)\
+[, 4]	hp	Gross horsepower\
+[, 5]	drat	Rear axle ratio\
+[, 6]	wt	Weight (1000 lbs)\
+[, 7]	qsec	1/4 mile time\
+[, 8]	vs	Engine (0 = V-shaped, 1 = straight)\
+[, 9]	am	Transmission (0 = automatic, 1 = manual)\
+[,10]	gear	Number of forward gears\
+[,11]	carb	Number of carburetors\
+
+## mtcars dataset
+```{r}
+str(mtcars)
+```
+
+
+
+## example regression experiment
+
+```{r}
+require(ggplot2)
+ggplot(data=mtcars,aes(wt,mpg))+geom_point()+geom_smooth(method='lm',aes(group=1))
+```
+
